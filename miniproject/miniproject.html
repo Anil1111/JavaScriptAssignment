@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title> Random Quote Generator </title>
+</head>
+
+<body style = "background-color:#FFE4C4;">
+<h1 style = "text-align: center; color: green"> Want a Random quote for your day? </h1>
+
+<div id = "quoteDiv" style="text-align: center;">
+<button style = "color:white; background-color: #4CAF50; text-align: center;" onclick = "Rand()">  Click me!  </button>
+<p id = "p" style =  "font-size: 24px; font-weight: bold; color: green;">  </p>  
+</div>
+
+<script>
+        var para = document.getElementById('p');            
+        var arr = ["Look for opportunities in every change in your life", "The story of life is quicker than the wink of an eye", "Life is a question and how we live it is our answer", "Life is accepting what is and working from that","Mornings contain the secret to an extraordinarily successful life","Little decisions you make alter your life, but they rarely do so all at once","There is no life as complete as the life that is lived by choice","The desire to live a purposeful life, I truly believe, resides in all humans","People without self-awareness go through life simply reacting out of habit","In life we can have results or reasons."]; 
+        function Rand() { 
+            para.innerHTML =  
+                arr[Math.floor(Math.random() * arr.length)]; 
+        }  
+</script>
+</body>
+</html>
